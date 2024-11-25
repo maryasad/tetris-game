@@ -1,6 +1,11 @@
 # Modern Tetris Game
 
-A modern, responsive Tetris game implemented in JavaScript with HTML5 Canvas.
+A modern, responsive Tetris game implemented with pure JavaScript and HTML5 Canvas.
+
+## Technologies
+- 🟨 **JavaScript** (Vanilla JS, no frameworks)
+- 🎨 HTML5 Canvas
+- 💅 CSS3
 
 ## Features
 - Classic Tetris gameplay
@@ -15,8 +20,3 @@ A modern, responsive Tetris game implemented in JavaScript with HTML5 Canvas.
 
 ## Setup
 Simply open `index.html` in a modern web browser to start playing.
-
-## Technologies
-- HTML5
-- CSS3
-- JavaScript
