@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A modern and attractive Tetris game">
+    <title>Modern Tetris Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>Tetris</h1>
+            <div class="game-info">
+                <div>Score: <span id="score">0</span></div>
+                <div>Level: <span id="level">1</span></div>
+                <div class="next-piece-container">
+                    <div>Next Piece:</div>
+                    <canvas id="next-piece-preview"></canvas>
+                </div>
+            </div>
+        </div>
+        <canvas id="tetris-board"></canvas>
+        <div class="game-controls">
+            <button id="start-btn">Start Game</button>
+            <button id="pause-btn">Pause</button>
+        </div>
+        <div class="game-instructions">
+            <p>Use arrow keys to move</p>
+            <p>Space to drop</p>
+            <p>Up arrow to rotate</p>
+        </div>
+    </div>
+    <script src="tetris.js"></script>
+</body>
+</html>

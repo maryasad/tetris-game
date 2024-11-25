@@ -1,0 +1,113 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #fff;
+}
+
+.game-container {
+    text-align: center;
+    background: rgba(51, 51, 51, 0.95);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.game-header {
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.game-header h1 {
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.game-info div {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    min-width: 120px;
+}
+
+#tetris-board {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: glow 2s infinite;
+}
+
+.game-controls {
+    margin-top: 1.5rem;
+}
+
+button {
+    margin: 0 10px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: linear-gradient(45deg, #4ecdc4, #45b7af);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(78, 205, 196, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#pause-btn {
+    background: linear-gradient(45deg, #ff6b6b, #ee5253);
+}
+
+#pause-btn:hover {
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+.next-piece-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#next-piece-preview {
+    border: 2px solid #555;
+    margin-top: 5px;
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 5px rgba(78, 205, 196, 0.2); }
+    50% { box-shadow: 0 0 20px rgba(78, 205, 196, 0.4); }
+    100% { box-shadow: 0 0 5px rgba(78, 205, 196, 0.2); }
+}
